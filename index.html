@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nails Art Duda</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/images/logo.png" alt="logo-Nails-Art-Duda" id="logo"></a>
+        <form>
+            <input type="text" placeholder="Digite o modelo que você procura...">
+            <button>
+                <img src="assets/images/lupa.png" alt="">
+            </button>
+        </form>
+
+        <div id="links">
+            <div id="conta">
+                <a href="conta.html">
+                    <img src="assets/images/conta-white.png" alt="icone-da-conta">
+                    <span>Conta </span>
+                </a>
+            </div>
+            <div id="suporte">
+                <a href="suporte.html">
+                    <img src="assets/images/suporte-white.png" alt="icone-de-suporte">
+                    <span>Suporte <br> e Rastreio</span>
+                </a>
+            </div>
+            <div id="carrinho">
+                <a href="#">
+                    <img src="assets/images/carrinho-white.png" alt="icone-carrinho-de-compras">
+                    <span>Carrinho <br> R$ <span id="valorCarrinho">0</span>,00</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="index">
+        <div>
+            <a href="#">
+                <img src="assets/images/323-3.jpeg" alt="modelo-323-3">
+                <p>Adesivo de unha 3D - chama - 323-3</p>
+                <p></p>
+                <p>R$ 10,00</p>
+                <input type="number" class="qtd" id="qtd1" value="1">
+                <input type="button" class="button" value="Adicionar" id="button1" onclick="adicionarAoCarrinho(1)" >
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="assets/images/342-2.jpeg" alt="modelo-342-2">
+                <p>Adesivo de unha 3D - smiles - 342-2</p>
+                <p>R$ 10,00</p>
+                <input type="number" class="qtd" id="qtd2" value="1">
+                <input type="button" class="button" value="Adicionar" id="button2" onclick="adicionarAoCarrinho(2)" >
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="assets/images/4-3.jpg" alt="modelo-4-3">
+                <p>Adesivo de unha 3D - flores azuis - 4-3</p>
+                <p>R$ 10,00</p>
+                <input type="number" class="qtd" id="qtd3" value="1">
+                <input type="button" class="button" value="Adicionar" id="button3" onclick="adicionarAoCarrinho(3)" >
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="assets/images/327-1s.jpeg" alt="modelo-323-3">
+                <p>Adesivo de unha 3D - chama - 323-3</p>
+                <p>R$ 10,00</p>
+                <input type="number" class="qtd" id="qtd4" value="1">
+                <input type="button" class="button" value="Adicionar" id="button4" onclick="adicionarAoCarrinho(4)" >
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="assets/images/490-1.jpeg" alt="modelo-490-1">
+                <p>Adesivo de unha 3D - flor dourada - 490-1</p>
+                <p>R$ 10,00</p>
+                <input type="number" class="qtd" id="qtd5" value="1">
+                <input type="button" class="button" value="Adicionar" id="button5" onclick="adicionarAoCarrinho(5)" >
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="assets/images/553-2.jpg" alt="modelo-553-2">
+                <p>Adesivo de unha 3D - rosa - 553-2</p>
+                <p>R$ 10,00</p>
+                <input type="number" class="qtd" id="qtd6" value="1">
+                <input type="button" class="button" value="Adicionar" id="button6" onclick="adicionarAoCarrinho(6)" >
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="assets/images/562-2.jpeg" alt="modelo-562-2">
+                <p>Adesivo de unha 3D - smiles - 562-2</p>
+                <p>R$ 10,00</p>
+                <input type="number" class="qtd" id="qtd7" value="1">
+                <input type="button" class="button" value="Adicionar" id="button7" onclick="adicionarAoCarrinho(7)" >
+            </a>
+        </div>
+        <div>
+            <a href="#">
+                <img src="assets/images/590-2.jpeg" alt="modelo-590-2">
+                <p>Adesivo de unha 3D - mar - 590-2</p>
+                <p>R$ 10,00</p>
+                <input type="number" class="qtd" id="qtd8" value="1">
+                <input type="button" class="button" value="Adicionar" id="button8" onclick="adicionarAoCarrinho(8)" >
+            </a>
+        </div>
+    </main>
+
+    <footer>
+            <span id="descricao">
+                <p>Descubra a Nails Art Duda, sua loja exclusiva de adesivos de unha 3D! Encontre uma variedade incrível de designs e aproveite as promoções especiais com frete grátis no site.</p>
+            </span>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

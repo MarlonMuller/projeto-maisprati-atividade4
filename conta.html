@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nails Art Duda</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body id="conta">
+    <header>
+        <a href="index.html"><img src="assets/images/logo.png" alt="logo-Nails-Art-Duda" id="logo"></a>
+        <form>
+            <input type="text" placeholder="Digite o modelo que você procura...">
+            <button>
+                <img src="assets/images/lupa.png" alt="">
+            </button>
+        </form>
+
+        <div id="links">
+            <div id="conta">
+                <a href="conta.html">
+                    <img src="assets/images/conta-white.png" alt="icone-da-conta">
+                    <span>Conta </span>
+                </a>
+            </div>
+            <div id="suporte">
+                <a href="suporte.html">
+                    <img src="assets/images/suporte-white.png" alt="icone-de-suporte">
+                    <span>Suporte <br> e Rastreio</span>
+                </a>
+            </div>
+            <div id="carrinho">
+                <a href="#">
+                    <img src="assets/images/carrinho-white.png" alt="icone-carrinho-de-compras">
+                    <span>Carrinho <br> R$ 0,00</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main id="conta">
+        <h2>Identificação</h2>
+        <div id="login">
+            <h3>Ja possuo cadastro</h3>
+            <label for="">E-mail
+                <input type="email">
+            <label for="">Senha
+                <input type="password">
+            </label>
+            <input id="button" type="button" value="Prosseguir" onclick="logar()">
+        </div>
+        <div id="cadastro">
+            <h3>Não possuo cadastro</h3>
+            <h4>Digite seu e-mail para cadastro:</h3>
+            <label for="">E-mail
+                <input type="email">
+            </label>
+            <input id="button" type="button" value="Cadastrar" onclick="cadastrar()">
+        </div>
+
+    </main>
+
+    <footer>
+        <span id="descricao">
+            <p>Descubra a Nails Art Duda, sua loja exclusiva de adesivos de unha 3D! Encontre uma variedade incrível de designs e aproveite as promoções especiais com frete grátis no site.</p>
+        </span>
+</footer>
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+/* Formatação do header rosa com links */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #EC268F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 35px;
+}
+
+img#logo {
+    max-width: 90px;
+}
+
+header div#links, form {
+    display: flex;
+    align-items: center;
+}
+
+header div#links {
+    gap: 15px; 
+}
+
+form {
+    position: relative;
+    width: 17em;
+    height: 2.5em;
+}
+
+form input {
+    width: 100%;
+    height: 100%;
+    padding-left: 0.5em;
+    border-radius: 8px;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+form button {
+    position: absolute;
+    right: 0;
+    width: 2em;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 1.5px;
+    margin-top: 10px;
+}
+
+form button:hover {
+    cursor: pointer;
+}
+
+form img {
+    max-width: 20px;
+}
+
+div#links a{
+    
+    text-decoration: none;
+    color: white;
+}
+
+div#links a:hover {
+    color: black;
+}
+
+div#conta, div#suporte, div#carrinho { 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+div#conta img, div#suporte img, div#carrinho img {
+    width: 24px;
+}
+
+div#conta a:hover img {
+    content: url('../images/conta-black.png');
+}
+
+div#suporte a:hover img {
+    content: url('../images/suporte-black.png');
+}
+
+div#carrinho a:hover img {
+    content: url('../images/carrinho-black.png');
+}
+
+/*Estilização do main da página index*/
+
+main#index {
+    padding-top: 5em;
+    background: rgb(238, 230, 230);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; 
+}
+
+main#index div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    width: 250px;
+    height: 370px;
+    background-color: white;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+    border-radius: 8px; 
+    
+}
+
+main#index div:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+
+main#index div a:hover {
+    color: #EC268F;
+}
+
+main#index a {
+    color: black;
+    text-decoration: none;
+}
+
+main#index img {
+    max-width: 230px;
+    
+}
+
+main#index p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+main#index input.qtd {
+    width: 15%;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+main#index  input.button {
+    width: 50%;
+    height: 35px;
+    background: #EC268F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+}
+
+main#index input.button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+
+
+
+/*Estilização da página conta*/
+
+#conta header #links #conta a {
+    color: black;
+}
+#conta header #links #conta a img {
+    content: url('../images/conta-black.png');
+}
+
+main#conta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+    background: rgb(238, 230, 230);
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+
+main#conta h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+div#login, div#cadastro {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    margin: 10px 10px 20px 10px;
+    background: rgb(247, 247, 247);
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+#login label, #cadastro label{
+    display: block;
+    margin: 17px 0;
+}
+
+#login h3, #cadastro h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#cadastro h4 {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+div#login input#button, div#cadastro input#button {
+    background-color: #EC268F;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    margin-top: 20px; 
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+div#login input#button:hover, div#cadastro input#button:hover {
+    opacity: 0.6;
+}
+
+
+
+
+/*Estilização da página suporte*/
+
+#suporte header #links #suporte a {
+    color: black;
+}
+
+#suporte header #links #suporte a img {
+    content: url('../images/suporte-black.png');
+}
+
+#suporte main#conta {
+    display: inline-block;
+    padding: 100px 150px;
+    background: rgb(238, 230, 230);
+    width: 100%;
+    height: 100%;
+}
+
+#suporte main#conta h2 {
+    margin-bottom: 20px;
+    
+}
+
+#suporte div#login {
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+    width: 40vw;
+    height: 320px;
+    padding-left: 20px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 100px;
+    background: rgb(247, 247, 247);
+}
+
+div#login input#buttonFechar {
+    background-color: rgba(134, 132, 132, 0.986);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+
+div#login input#buttonFechar:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#suporte #conta #login textarea {
+    width: 173px;
+}
+
+/* Estilização do footer */
+footer {
+    background: black;
+    color: white;
+    clear: both;
+    padding: 10px;
+}
+
+footer span p {
+    text-align: center;
+}

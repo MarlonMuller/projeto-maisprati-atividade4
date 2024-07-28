@@ -100,6 +100,37 @@ div#carrinho a:hover img {
     content: url('../images/carrinho-black.png');
 }
 
+
+/*Estilização do menu hamburguer do header */
+
+header img#menu-hamburguer {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+
+    header {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: auto;
+    }
+
+    header img#menu-hamburguer {
+        display: block;
+        cursor: pointer;
+    }
+    header form, header div#links {
+        display: none;
+    }
+    header div#links.hidden {
+        display: inline;
+    }
+}
+
+
 /*Estilização do main da página index*/
 
 main#index {
@@ -263,11 +294,14 @@ div#login input#button:hover, div#cadastro input#button:hover {
 }
 
 #suporte main#conta {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 100px 150px;
     background: rgb(238, 230, 230);
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 #suporte main#conta h2 {
@@ -277,7 +311,7 @@ div#login input#button:hover, div#cadastro input#button:hover {
 
 #suporte div#login {
     border: 1px solid black;
-    display: inline-block;
+    display: flex;
     vertical-align: top;
     width: 40vw;
     height: 320px;

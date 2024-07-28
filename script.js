@@ -27,3 +27,10 @@ function cadastrar() {
 function logar() {
     alert('Login realizado com sucesso! Bem vinda(o) a Nails Art Duda!')
 }
+
+function toggleMenu() {
+    const links = document.getElementById('links');
+
+    links.classList.toggle('hidden');
+
+}

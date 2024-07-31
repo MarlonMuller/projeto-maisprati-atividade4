@@ -304,6 +304,12 @@ div#login input#button:hover, div#cadastro input#button:hover {
     box-sizing: border-box;
 }
 
+
+input {
+    padding: 5px;
+} 
+
+
 #suporte main#conta h2 {
     margin-bottom: 20px;
     
@@ -312,14 +318,13 @@ div#login input#button:hover, div#cadastro input#button:hover {
 #suporte div#login {
     border: 1px solid black;
     display: flex;
-    vertical-align: top;
+    flex-direction: column;
+    align-items: center;
     width: 40vw;
-    height: 320px;
-    padding-left: 20px;
-    padding-top: 5px;
-    margin-bottom: 10px;
-    margin-right: 100px;
+    
+    padding: 20px;
     background: rgb(247, 247, 247);
+    box-sizing: border-box;
 }
 
 div#login input#buttonFechar {

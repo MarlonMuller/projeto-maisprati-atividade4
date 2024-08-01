@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "imagem": "assets/images/323-3.jpeg",
+        "descricao": "Adesivo de unha 3D - chama - 323-3",
+        "preco": 10.00
+    },
+    {
+        "id": 2,
+        "imagem": "assets/images/342-2.jpeg",
+        "descricao": "Adesivo de unha 3D - smiles - 342-2",
+        "preco": 10.00
+    },
+    {
+        "id": 3,
+        "imagem": "assets/images/4-3.jpg",
+        "descricao": "Adesivo de unha 3D - flores azuis - 4-3",
+        "preco": 10.00
+    },
+    {
+        "id": 4,
+        "imagem": "assets/images/327-1s.jpeg",
+        "descricao": "Adesivo de unha 3D - chama - 323-3",
+        "preco": 10.00
+    },
+    {
+        "id": 5,
+        "imagem": "assets/images/490-1.jpeg",
+        "descricao": "Adesivo de unha 3D - flor dourada - 490-1",
+        "preco": 10.00
+    },
+    {
+        "id": 6,
+        "imagem": "assets/images/553-2.jpg",
+        "descricao": "Adesivo de unha 3D - rosa - 553-2",
+        "preco": 10.00
+    },
+    {
+        "id": 7,
+        "imagem": "assets/images/562-2.jpeg",
+        "descricao": "Adesivo de unha 3D - smiles - 562-2",
+        "preco": 10.00
+    },
+    {
+        "id": 8,
+        "imagem": "assets/images/590-2.jpeg",
+        "descricao": "Adesivo de unha 3D - mar - 590-2",
+        "preco": 10.00
+    }
+]

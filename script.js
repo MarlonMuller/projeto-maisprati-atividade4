@@ -4,6 +4,7 @@ let valorUnidade = 10
 
 document.addEventListener('DOMContentLoaded', () => {
     atualizarValorCarrinho()
+    carregarProdutos()
 })
 
 function atualizarValorCarrinho() {
@@ -12,8 +13,33 @@ function atualizarValorCarrinho() {
     valorCarrinho.innerHTML = valorTotal
 }
 
+async function carregarProdutos() {
+    try {
+        let response = await fetch('produtos.json')
+        let produtos = await response.json()
+
+        let main = document.getElementById('index')
+        main.innerHTML = ''
+
+        produtos.forEach(produto => {
+            let div = document.createElement('div')
+            div.innerHTML = `
+                <a href="#">
+                    <img src="${produto.imagem}" alt="modelo-${produto.id}">
+                    <p>${produto.descricao}</p>
+                    <p>R$ ${produto.preco.toFixed(2)}</p>
+                    <input type="number" class="qtd" id="qtd${produto.id}" value="1">
+                    <input type="button" class="button" value="Adicionar" id="button${produto.id}" onclick="adicionarAoCarrinho(${produto.id})">
+                </a>
+            `
+                main.appendChild(div)
+        })
+    } catch(error) {
+        console.error('Erro ao carregar produtos:', error)
+    }
+}
+
 function adicionarAoCarrinho(id) {
-    alert('Item adicionado ao carrinho')
     
     let qtdInput = document.getElementById(`qtd${id}`).value
     let quantidade = parseInt(qtdInput)
